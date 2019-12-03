@@ -102,7 +102,7 @@ public class GameClient
   {
     while(true)
     {
-      String serverAddress = (args.length == 0) ? "localhost" : args[1];
+      String serverAddress = (args.length == 0) ? "localhost" : args[0];
       GameClient client = new GameClient(serverAddress);
       client.play();
     }
